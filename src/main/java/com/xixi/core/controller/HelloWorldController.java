@@ -22,7 +22,7 @@ public class HelloWorldController {
 	@ResponseBody
 	@RequestMapping("/test")
 	public User doGet(HttpServletRequest req, HttpServletResponse resp){
-		logger.error("kaishi");
+		logger.error("修改");
 		User user =userService.getUserById(1);
 		return user;
 	}
