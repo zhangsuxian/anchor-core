@@ -1,9 +1,9 @@
-<%@page contentType="text/html; chareset=gbk"%>
+<%@page contentType="text/html; chareset=utf-8"%>
 <html>
 <head>
 <meta http-equiv="Content-Type"        
-            content="text/html; charset=gbk"/> </head>
+            content="text/html; charset=utf-8"/> </head>
 <body>
-<h2>Hello ÕÅËØÏÈ</h2>
+<h2>Hello å¼ ç´ å…ˆ</h2>
 </body>
 </html>
