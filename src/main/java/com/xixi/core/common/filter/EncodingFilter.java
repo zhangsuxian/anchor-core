@@ -26,7 +26,7 @@ public class EncodingFilter implements Filter{
         HttpServletResponse response = (HttpServletResponse)arg1;  
           
         //2 解决中文乱码问题:1)请求的中文乱码(GET\POST);2)响应的中文乱码.  
-        request.setCharacterEncoding("utf-8");  
+        request.setCharacterEncoding("gbk");  
         response.setContentType("text/html;charset=gbk");  
           
         //3 放行  
