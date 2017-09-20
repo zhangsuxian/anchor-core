@@ -22,4 +22,39 @@ public class ReadDaoImplTest {
 		User user = userDao.selectByPrimaryKey(1);
 		assertEquals(2, user.getId());
 	}
+	@Test
+	public void getListTest1() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
+	@Test
+	public void getListTest2() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
+	@Test
+	public void getListTest3() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
+	@Test
+	public void getListTest4() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
+	@Test
+	public void getListTest5() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
+	@Test
+	public void getListTest6() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
+	@Test
+	public void getListTest7() {
+		User user = userDao.selectByPrimaryKey(1);
+		assertEquals(2, user.getId());
+	}
 }
