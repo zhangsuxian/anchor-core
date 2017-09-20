@@ -13,7 +13,7 @@ import com.xixi.core.dao.IUserDao;
 import com.xixi.core.entity.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:config/spring-mvc.xml"})
+@ContextConfiguration({"classpath:config/spring-mvc.xml","classpath:config/spring-mybatis.xml"})
 public class ReadDaoImplTest {
 	@Resource
 	private IUserDao userDao;
