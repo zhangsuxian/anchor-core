@@ -20,17 +20,17 @@ public class ReadDaoImplTest {
 	@Test
 	public void getListTest() {
 		User user = userDao.selectByPrimaryKey(1);
-		assertEquals(2, user.getId());
+		assertEquals(1, user.getId());
 	}
 	@Test
 	public void getListTest1() {
 		User user = userDao.selectByPrimaryKey(1);
-		assertEquals(2, user.getId());
+		assertEquals(1, user.getId());
 	}
 	@Test
 	public void getListTest2() {
 		User user = userDao.selectByPrimaryKey(1);
-		assertEquals(2, user.getId());
+		assertEquals(1, user.getId());
 	}
 	@Test
 	public void getListTest3() {
@@ -45,7 +45,7 @@ public class ReadDaoImplTest {
 	@Test
 	public void getListTest5() {
 		User user = userDao.selectByPrimaryKey(1);
-		assertEquals(2, user.getId());
+		assertEquals(1, user.getId());
 	}
 	@Test
 	public void getListTest6() {
