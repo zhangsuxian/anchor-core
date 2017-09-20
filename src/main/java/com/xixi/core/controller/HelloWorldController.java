@@ -22,15 +22,14 @@ public class HelloWorldController {
 	@ResponseBody
 	@RequestMapping("/test")
 	public User doGet(HttpServletRequest req, HttpServletResponse resp){
-		if ("s" == "sq"){
-			logger.info("Hello World!");
-		}
 		User user =userService.getUserById(1);
 		  if (user != null) {
 			  user.getAge();
 		  }
 		String name = user.getUserName();
-		logger.info(name);
+		if(name == "sdsd"){
+			logger.info("findbugs");
+		}
 		return user;
 	}
 
