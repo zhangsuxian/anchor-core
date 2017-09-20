@@ -20,6 +20,6 @@ public class ReadDaoImplTest {
 	@Test
 	public void getListTest() {
 		User user = userDao.selectByPrimaryKey(1);
-		assertEquals(1, user.getId());
+		assertEquals(2, user.getId());
 	}
 }
