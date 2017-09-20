@@ -20,6 +20,13 @@ public class ReadDaoImplTest {
 	@Test
 	public void getListTest() {
 		User user = userDao.selectByPrimaryKey(1);
+		 if (user != null) {
+			  user.getAge();
+		  }
+		String name = user.getUserName();
+		if(name == "sdsd"){
+			user.setUserName("sdfsdf");
+		}
 		assertEquals(1, user.getId());
 	}
 	@Test
