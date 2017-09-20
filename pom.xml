@@ -7,6 +7,39 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>anchor-core Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	 <profiles>
+        <!-- Jenkins by default defines a property BUILD_NUMBER which is used to enable the profile. -->
+        <profile>
+            <id>jenkins</id>
+            <activation>
+                <property>
+                    <name>env.BUILD_NUMBER</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>cobertura-maven-plugin</artifactId>
+                        <version>2.7</version>
+                        <configuration>
+                            <formats>
+                                <format>xml</format>
+                            </formats>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>cobertura</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 	<properties>
 		<!-- spring版本号 -->
 		<spring.version>4.0.2.RELEASE</spring.version>
@@ -19,6 +52,7 @@
 			UTF-8
 		</project.build.sourceEncoding>
 	</properties>
+	
 	<dependencies>
 		<!-- spring核心包 -->
 		<dependency>
