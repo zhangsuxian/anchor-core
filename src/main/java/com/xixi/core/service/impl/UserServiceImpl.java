@@ -16,6 +16,13 @@ public class UserServiceImpl implements IUserService {
 
 	public User getUserById(int userId) {
 		User user = userDao.selectByPrimaryKey(userId);
+		if (user != null) {
+			user.getAge();
+		}
+		String name = user.getUserName();
+		if(name == "findbugs"){
+			user.setUserName("findbugs");
+		}
 		return user;
 	}
 
