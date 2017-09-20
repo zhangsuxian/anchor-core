@@ -26,6 +26,11 @@ public class HelloWorldController {
 			logger.info("Hello World!");
 		}
 		User user =userService.getUserById(1);
+		  if (user != null) {
+			  user.getAge();
+		  }
+		String name = user.getUserName();
+		logger.info(name);
 		return user;
 	}
 
